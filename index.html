@@ -19,7 +19,7 @@
     <header class="header">
       <nav class="container">
         <a class="logo" href="./index.html"
-          >Web<span class="logo-header">Studio</span></a
+          >Web<span class="logo--header">Studio</span></a
         >
 
         <ul class="nav">
@@ -464,7 +464,7 @@
       <div class="container">
         <div class="footer__block">
           <a class="logo" href="./index.html"
-            >Web<span class="logo-footer">Studio</span></a
+            >Web<span class="logo--footer">Studio</span></a
           >
           <address class="address">
             <p class="address__item">г. Киев, пр-т Леси Украинки, 26</p>
@@ -484,8 +484,8 @@
         </div>
 
         <div class="footer__block">
-          <h3 class="footer__social-title">присоединяйтесь</h3>
-          <ul class="social">
+          <b class="footer__social-title">присоединяйтесь</b>
+          <ul class="social footer__social">
             <li class="social__item">
               <a
                 class="social__link"
@@ -538,6 +538,26 @@
             </li>
           </ul>
         </div>
+
+        <div class="footer__block">
+          <b class="footer__social-title">Подпишитесь на рассылку</b>
+          <form class="form-subscribe">
+            <input
+              class="form-subscribe__input"
+              type="email"
+              name="email"
+              id="email"
+              placeholder=" "
+            />
+            <label class="form-subscribe__label" for="email">E-mail</label>
+            <button class="btn btn--with-icon" type="submit">
+              Подписаться
+              <svg class="btn__icon btn__icon--end" width="24" height="24">
+                <use href="./assets/image/svg/symbol-defs.svg#send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
 
@@ -548,8 +568,83 @@
             <use href="./assets/image/svg/symbol-defs.svg#btn-close"></use>
           </svg>
         </button>
+        <h3 class="modal__title">Оставьте свои данные, мы вам перезвоним</h3>
+        <form class="form-collback">
+          <div class="form-collback__field">
+            <label class="form-collback__label"
+              >Имя
+              <span>
+                <input class="form-collback__input" type="text" name="name" />
+                <svg class="form-collback__icon" width="18" height="18">
+                  <use
+                    href="./assets/image/svg/symbol-defs.svg#form-person"
+                  ></use>
+                </svg>
+              </span>
+            </label>
+          </div>
+
+          <div class="form-collback__field">
+            <label class="form-collback__label"
+              >Телефон
+              <span>
+                <input class="form-collback__input" type="tel" name="tel" />
+                <svg class="form-collback__icon" width="18" height="18">
+                  <use
+                    href="./assets/image/svg/symbol-defs.svg#form-phone"
+                  ></use>
+                </svg>
+              </span>
+            </label>
+          </div>
+
+          <div class="form-collback__field">
+            <label class="form-collback__label"
+              >Почта
+              <span>
+                <input class="form-collback__input" type="email" name="email" />
+                <svg class="form-collback__icon" width="18" height="18">
+                  <use
+                    href="./assets/image/svg/symbol-defs.svg#form-email"
+                  ></use>
+                </svg>
+              </span>
+            </label>
+          </div>
+
+          <div class="form-collback__field">
+            <label class="form-collback__label" for="collbackComment"
+              >Комментарий
+            </label>
+            <textarea
+              class="form-collback__textarea"
+              name="comment"
+              rows="5"
+              id="collbackComment"
+              placeholder="Введите текст"
+            ></textarea>
+          </div>
+
+          <div class="form-collback__agreement">
+            <label class="form-collback__chbox-label">
+              <input
+                class="form-collback__checkbox hidden"
+                type="checkbox"
+                name="checkAgree"
+              />
+              <svg class="form-collback__checkbox-icon" width="16" height="15">
+                <use href="./assets/image/svg/symbol-defs.svg#form-check"></use>
+              </svg>
+              Соглашаюсь с рассылкой и принимаю
+            </label>
+            <a class="form-collback__link" href="">Условия договора</a>
+          </div>
+          <button class="btn" type="submit">Отправить</button>
+        </form>
       </div>
+      <!--/.modal-->
     </div>
+    <!--/.backdrop-->
 
     <script src="./assets/js/modal.js"></script>
   </body>
